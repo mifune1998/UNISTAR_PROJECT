@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact us</title>
+    <link rel="stylesheet" href="contactusstyle.css">
+</head>
+<body>
+  <header>
+      <div class="header-container">
+          <nav>
+              <img class="logo" src="logo_transparent.png">
+              <ul class="menu">
+                  <li><a  href="index.html">Home</a></li>
+                  <li><a  href="registerpage.html">Register</a></li>
+                  <li><a  class="active" href="#">Contact</a></li>
+                  <li><a href="accommodation.html">Accommodation</a></li>
+                  <li><a href="facility.html">Facility</a></li>
+                  <li><a href="dining.html">Dining</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+    <section>
+        <div class="contact-container">
+            <div class="grid">
+                <div class="content">
+                    <h1>CONTACT US</h1>
+                    <p>We appreciate your interest in UNISTAR. Please let us know, if you have any suggestion or recommendation to further improve our services!</p>
+                </div>
+                <div class="form">
+                    <form action="#">
+                        <div class="flex">
+                            <input type="text" name="" id="" placeholder="Your Name">
+                            <input type="email" name="" id="" placeholder="Your Email">
+                        </div>
+                        <input type="text" name="" id="" placeholder="Your Subject">
+                        <textarea name="" id="" cols="30" rows="8" placeholder="Your Message"></textarea>
+                        <button onclick="messageSent()" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <h2>CONTACT</h2>
+    </section>
+    <div class="footerwrapper">
+        <div class="footer-container">
+            <div class="ftr">
+                <h3>Services</h3>
+                <ul class="content">
+                  <li><a href="accommodation.html">Accommodation</a></li>
+                  <li><a href="facility.html">Facility</a></li>
+                  <li><a href="dining.html">Dining</a></li>
+                </ul>
+            </div>
+            <div class="ftr">
+                <h3>Contact</h3>
+                <ul class="content">
+                    <li><a href="aboutus.html">faisal.hanafi90@yahoo.com</a></li>
+                    <li><a href="aboutus.html">(+60) 11 3241 6157 </a></li>
+                    <li><a href="aboutus.html">IIUM, Gombak, Selangor</a></li>
+                </ul>
+            </div>
+            <div class="ftr">
+                <h3>Social</h3>
+                <ul class="content">
+                    <li><a href="https://www.facebook.com/faisal.hanafi.169">Facebook</a></li>
+                    <li><a href="https://twitter.com/OfficialIIUM?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/officialiium/?hl=en">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="ftr">
+                <h3>Join Our Newsletter</h3>
+                <form action="#">
+                    <input type="email" placeholder="Enter Your Email." required>
+                    <div class="btn">
+                        <input type="submit" onclick="newssent()" value="Subscribe">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   <script>
+       const header = document.querySelector("header")
+       window.onscroll =()=>{
+           this.scrollY>20? header.classList.add("sticky") : header.classList.remove("sticky")
+       }
+       function newssent(){
+         alert("Please check your email!")
+       }
+        function messageSent() {
+          alert("Thank you. Message is sent successfully!");
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="diningstyle.css">
+</head>
+<body>
+  <header>
+      <div class="header-container">
+          <nav>
+              <img class="logo" src="logo_transparent.png">
+              <ul class="menu">
+                  <li><a  href="index.html">Home</a></li>
+                  <li><a  href="registerpage.html">Register</a></li>
+                  <li><a   href="aboutus.html">About</a></li>
+                  <li><a href="accommodation.html">Accommodation</a></li>
+                  <li><a href="facility.html">Facility</a></li>
+                  <li><a class="active" href="#">Dining</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+  <main>
+    <section>
+        <div class="about-container">
+            <div class="grid">
+                <div class="left">
+                    <img src="food-2569257_1920.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h1>BREAKFAST</h1>
+                    <h3>Time:</h3>
+                    <p>6:00 am - 10:00 am</p>
+                    <h3>Type of Serving:</h3>
+                    <p>Breakfast Buffet</p>
+                    <h3>Buffet Price (/pax):</h3>
+                    <ol>
+                      <li>Adult            : RM 60</li>
+                      <li>Child (under 12) : RM20</li>
+                    </ol>
+                    <h3>Type of Dish</h3>
+                    <ol>
+                      <li>English Breakfast</li>
+                      <li>Kampung Style Breakfast</li>
+                      <li>Oriental Breakfast</li>
+                    </ol>
+                    <a href="contactus.html" class="butn">Reserve Now!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+      <div class="about-container">
+          <div class="grid">
+              <div class="left">
+                  <img src="duck-2957809_1920.jpg" alt="">
+              </div>
+              <div class="right">
+                <h1>DINNER</h1>
+                <h3>Time:</h3>
+                <p>6:00 am - 12:00 am</p>
+                <h3>Type of Serving:</h3>
+                <ol>
+                  <li>Dinner Buffet</li>
+                  <li>À la carte (prices vary)</li>
+                </ol>
+                <p></p>
+                <h3>Buffet Price (/pax):</h3>
+                <ol>
+                  <li>Adult            : RM 80</li>
+                  <li>Child (under 12) : RM 30</li>
+                </ol>
+                <h3>Type of Dish</h3>
+                <ol>
+                  <li>Western</li>
+                  <li>Local</li>
+                  <li>Oriental</li>
+                  <li>Fusion</li>
+                </ol>
+                  <a href="contactus.html" class="butn">Reserve Now!</a>
+              </div>
+          </div>
+      </div>
+    </section>
+      </main>
+    <div class="footerwrapper">
+        <div class="footer-container">
+            <div class="ftr">
+                <h3>Services</h3>
+                <ul class="content">
+                  <li><a href="accommodation.html">Accommodation</a></li>
+                  <li><a href="facility.html">Facility</a></li>
+                  <li><a href="dining.html">Dining</a></li>
+                </ul>
+            </div>
+            <div class="ftr">
+                <h3>Contact</h3>
+                <ul class="content">
+                    <li><a href="aboutus.html">faisal.hanafi90@yahoo.com/Lubnan</a></li>
+                    <li><a href="aboutus.html">(+60) 11 3241 6157 </a></li>
+                    <li><a href="aboutus.html">IIUM, Gombak, Selangor</a></li>
+                </ul>
+            </div>
+            <div class="ftr">
+                <h3>Social</h3>
+                <ul class="content">
+                    <li><a href="https://www.facebook.com/faisal.hanafi.169">Facebook</a></li>
+                    <li><a href="https://twitter.com/OfficialIIUM?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/officialiium/?hl=en">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="ftr">
+                <h3>Join Our Newsletter</h3>
+                <form action="#">
+                    <input type="email" placeholder="Enter Your Email." required>
+                    <div class="btn">
+                        <input type="submit" onclick="newssent()" value="Subscribe">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   <script>
+       const header = document.querySelector("header")
+       window.onscroll =()=>{
+           this.scrollY>20? header.classList.add("sticky") : header.classList.remove("sticky")
+       }
+       function newssent(){
+         alert("Please check your email!")
+       }
+   </script>
+</body>
+</html>

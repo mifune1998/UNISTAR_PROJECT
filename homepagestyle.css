@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Open Sans;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 26px 0;
+    transition: all .5s ease;
+}
+header.sticky{
+    background: #fff;
+    padding: 20px 0;
+    opacity: 0.8;
+}
+.logo {
+  width: 150px;
+  height: auto;
+  padding: -100px 100px;
+}
+header.sticky li a{
+    color: #000;
+}
+.header-container{
+    width: 100%;
+    max-width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+.menu {
+    display: flex;
+}
+.menu li{
+    list-style-type: none;
+    margin-left: 35px;
+}
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'arial';
+}
+.menu li a.active{
+  background: red;
+  border-radius: 30px;
+}
+main{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('castle-4931672_1920.jpg') no-repeat center/cover;
+}
+.center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  font-family: 'sans-serif';
+}
+
+.center h1{
+  color: white;
+  font-size: 70px;
+  font-weight: bold;
+  width: 900px;
+  text-align: center;
+}
+
+.center h3{
+  color: white;
+  font-size: 50px;
+  font-weight: bold;
+  width: 885px;
+  text-align: center;
+}
+
+.center .buttons{
+  margin: 35px 280px;
+}
+
+.buttons button{
+  height: 50px;
+  width: 150px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffb3b3;
+  background: red;
+  border: 1px solid #cc0000;
+  outline: none;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-left: 75px;
+}
+
+.buttons button:hover{
+  background: green;
+}
+section{
+    padding: 40px 0;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 17px;
+}
+.about-container, {
+  width:100%;
+  max-width: 1160px;
+  padding: 100 40px;
+  margin: 0 auto;
+}
+.service-container {
+  width:100%;
+  max-width: 1160px;
+  padding: 100 40px;
+  margin: 0 auto;
+}
+.title{
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+.grid .item{
+  text-align: center;
+
+}
+.item i{
+  height: 100px;
+  width: 100px;
+  border: 10px solid #0078ff;
+  border-radius: 50%;
+  line-height: 80px;
+  font-size: 2.5rem;
+  transition: .3 linear;
+}
+.grid .item h3{
+  margin: 1rem 0;
+  font-weight: 700;
+}
+.covidwrapper{
+    background: red;
+    padding: 50px 20px;
+}
+.covidtitle{
+  text-align: center;
+  font-weight: 800;
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  background: white;
+}
+
+.covidinfo{
+  text-align: center;
+  font-weight: 800;
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  background-color: white;
+  font-family: 'sans-serif';
+}
+
+.footerwrapper{
+    background: #212121;
+    padding: 50px 20px;
+}
+.footerwrapper .footer-container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footerwrapper .ftr h3{
+    font-size: 1.4em;
+    margin-bottom: 1.2em;
+    color: #fff;
+}
+.footerwrapper .content{
+    list-style:none;
+}
+.footerwrapper .content a{
+    text-decoration: none;
+    color: #fff;
+    opacity: .6;
+    line-height: 30px;
+    transition: .3s ease opacity;
+}
+.footerwrapper .content a:hover{
+    opacity: 1;
+}
+.footerwrapper .ftr{
+    flex-basis: 18%;
+}
+.footerwrapper form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.footerwrapper input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f5f5f5;
+}
+.footerwrapper .btn input{
+    background: blueviolet;
+    color: #fff;
+    transition: .3s ease background;
+}
+.footerwrapper .btn input:hover{
+    background: #000;
+}
+@media only screen and (max-width: 540px){
+    footer .ftr{
+        flex-basis: 80%;
+        margin: 0 auto;
+    }
+    form{
+        flex-direction: column;
+    }
+    form input{
+        width: 90%;
+        margin: 5px auto;
+    }

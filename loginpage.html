@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="loginstyle.css">
+</head>
+<body>
+  <header>
+      <div class="header-container">
+          <nav>
+              <img class="logo" src="logo_transparent.png">
+              <ul class="menu">
+                  <li><a  href="index.html">Home</a></li>
+                  <li><a  class="active" href="#">Login</a></li>
+                  <li><a href="aboutus.html">About</a></li>
+                  <li><a href="accommodation.html">Accommodation</a></li>
+                  <li><a href="facility.html">Facility</a></li>
+                  <li><a href="dining.html">Dining</a></li>
+              </ul>
+          </nav>
+      </div>
+  </header>
+    <section>
+        <div class="form-container">
+            <h1>login form</h1>
+            <form action="#">
+                <div class="control">
+                    <label for="username">Username</label>
+                    <input type="text" name="username" id="username">
+                </div>
+                <div class="control">
+                    <label for="psw">Password</label>
+                    <input type="password" name="psw" id="psw">
+                </div>
+                <span><input type="checkbox" > Remember me.</span>
+                </form>
+                <div class="loginbutton">
+                  <button onclick="location.href = 'homepage.html';" id="myButton">LOGIN</button>
+                </div>
+            <div class="registernew">
+                <p>New here?</p>
+            </div>
+            <div class="registerbutton">
+              <button onclick="location.href = 'registerpage.html';" id="myButton">REGISTER</button>
+            </div>
+        </div>
+    </section>
+    <div class="footerwrapper">
+        <div class="footer-container">
+            <div class="ftr">
+                <h3>Services</h3>
+                <ul class="content">
+                  <li><a href="accommodation.html">Accommodation</a></li>
+                  <li><a href="facility.html">Facility</a></li>
+                  <li><a href="dining.html">Dining</a></li>
+                </ul>
+            </div>
+            <div class="ftr">
+                <h3>Contact</h3>
+                <ul class="content">
+                    <li><a href="aboutus.html">faisal.hanafi90@yahoo.com</a></li>
+                    <li><a href="aboutus.html">(+60) 11 3241 6157 </a></li>
+                    <li><a href="aboutus.html">IIUM, Gombak, Selangor</a></li>
+                </ul>
+            </div>
+            <div class="ftr">
+                <h3>Social</h3>
+                <ul class="content">
+                    <li><a href="https://www.facebook.com/faisal.hanafi.169">Facebook</a></li>
+                    <li><a href="https://twitter.com/OfficialIIUM?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/officialiium/?hl=en">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="ftr">
+                <h3>Join Our Newsletter</h3>
+                <form action="#">
+                    <input type="email" placeholder="Enter Your Email." required>
+                    <div class="btn">
+                        <input type="submit" onclick="newssent()" value="Subscribe">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+   <script>
+       const header = document.querySelector("header")
+       window.onscroll =()=>{
+           this.scrollY>20? header.classList.add("sticky") : header.classList.remove("sticky")
+       }
+       function newssent(){
+         alert("Please check your email!")
+       }
+   </script>
+</body>
+</html>

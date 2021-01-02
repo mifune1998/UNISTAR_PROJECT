@@ -1,0 +1,179 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Open Sans";
+    color: #fff;
+}
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 26px 0;
+    transition: all .5s ease;
+}
+header.sticky{
+    background: #fff;
+    padding: 20px 0;
+    opacity: 0.8;
+}
+.logo {
+  width: 150px;
+  height: auto;
+  padding: -100px 100px;
+}
+header.sticky li a{
+    color: #000;
+}
+.header-container{
+    width: 100%;
+    max-width: 1160px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+.menu {
+    display: flex;
+}
+.menu li{
+    list-style-type: none;
+    margin-left: 35px;
+}
+.menu li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'arial';
+}
+.menu li a.active{
+  background: red;
+  border-radius: 30px;
+}
+section{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url("hotel-4638955_960_720.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.form-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    width: 380px;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow:7px 7px 60px #000;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+.control input{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    color: #222;
+    border: none;
+    outline: none;
+    margin: 1em 0;
+}
+.loginbutton button{
+  width: 100%;
+  display: block;
+  padding: 10px;
+  color: #222;
+  border: none;
+  outline: none;
+  margin: 1em 0;
+  background: crimson;
+}
+.loginbutton button:hover{
+    opacity: 0.5;
+}
+.registernew p{
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  opacity: .8;
+  transition: opacity .3s ease;
+}
+.registerbutton button{
+  width: 100%;
+  display: block;
+  padding: 10px;
+  color: #222;
+  border: none;
+  outline: none;
+  margin: 1em 0;
+  background: crimson;
+}
+.registerbutton button:hover{
+    opacity: 0.5;
+}
+.footerwrapper{
+    background: #212121;
+    padding: 50px 20px;
+}
+.footerwrapper .footer-container{
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.footerwrapper .ftr h3{
+    font-size: 1.4em;
+    margin-bottom: 1.2em;
+    color: #fff;
+}
+.footerwrapper .content{
+    list-style:none;
+}
+.footerwrapper .content a{
+    text-decoration: none;
+    color: #fff;
+    opacity: .6;
+    line-height: 30px;
+    transition: .3s ease opacity;
+}
+.footerwrapper .content a:hover{
+    opacity: 1;
+}
+.footerwrapper .ftr{
+    flex-basis: 18%;
+}
+.footerwrapper form{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.footerwrapper input{
+    border: none;
+    outline: none;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f5f5f5;
+}
+.footerwrapper .btn input{
+    background: blueviolet;
+    color: #fff;
+    transition: .3s ease background;
+}
+.footerwrapper .btn input:hover{
+    background: #000;
+}
